@@ -44,7 +44,7 @@ const sortBy = (temples) =>{
             displayTemples(temples.filter((word) => word.location.includes("Utah")));
             break;
 
-        case "notutah":
+        case "nonutah":
             displayTemples(temples.filter((word) => !word.location.includes("Utah")));
             break;
         
