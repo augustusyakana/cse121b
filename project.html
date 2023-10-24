@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/project.js" defer></script>
+    <script src="scripts/project.js" type="module" defer ></script>
     <link rel="stylesheet" href="project.css">
     <title>'Ye Quote Generator</title>
 </head>
 <body>
     <h1>'Ye Quote Generator</h1>
+    <p id="warning">Warning: Explicit vulgar language</p>
 
-    <section>
+    <section id="containers">
         <div id="quoteContainer"></div>
+        <div id="likesContainer"></div>
+        
     </section>
 
     
+
+    <button id="heart">&hearts;</button>
     <button id="quoteBtn">New Quote</button>
+    <button id="showLikes">Show Likes</button>
 
     <div id="foot">
         <p>&copyAugustus Yuki Yakana</p>
