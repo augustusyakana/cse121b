@@ -1,6 +1,17 @@
 
 export function addToLikes(list, quote) {
-    list.push(quote)
+    if (list.length < 5) {
+        list.push(quote)
+        displayLikes(list);
+    } else if (list.length >= 5){
+        list.shift();
+        displayLikes(list);
+        list.push(quote);
+        clearLikes();
+        displayLikes(list);
+        
+    } 
+    
 }
 
 export const reset = () => {
@@ -16,7 +27,7 @@ export function displayLikes(likes){
         para.textContent = "NOTHING IN LIKES!"
         quoteContainer.appendChild(para);
 
-    } else {
+    } else  {
         likes.forEach((like) =>{
             const para = document.createElement('p');
             para.setAttribute('id', 'quote');
@@ -24,6 +35,11 @@ export function displayLikes(likes){
             
         })
     }
+}
+
+export function clearLikes(){
+    likesContainer.innerHTML = '';
+    reset();
 }
 
 export function displayQuotes(quote){

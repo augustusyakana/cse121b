@@ -3,7 +3,8 @@ const likesContainer = document.querySelector('#likesContainer');
 const quoteBtn = document.querySelector('#quoteBtn');
 const heartBtn = document.querySelector('#heart');
 const likesBtn = document.querySelector('#showLikes');
-import {addToLikes, reset, displayLikes, displayQuotes} from "./functions.js";
+const hideBtn = document.querySelector('#hideLikes');
+import {addToLikes, reset, displayLikes, displayQuotes, clearLikes} from "./functions.js";
 
 const likes = [];
 const error = "ERROR: NO QUOTE!"
@@ -51,6 +52,10 @@ likesBtn.addEventListener('click', () =>{
     displayLikes(likes);
 
 
+})
+
+hideBtn.addEventListener('click', () => {
+    clearLikes();
 })
 
 
