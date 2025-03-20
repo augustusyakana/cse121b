@@ -1,4 +1,4 @@
-# cse121b
+# CSE 121B : JavaScript | Brigham Young University
 This repository contains coursework, assignments, 
 and projects for CSE 121B: JavaScript Programming. 
 The course covers fundamental and advanced JavaScript 
